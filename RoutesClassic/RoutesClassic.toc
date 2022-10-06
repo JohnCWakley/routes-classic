@@ -41,8 +41,8 @@ Locales\Locale-zhCN.lua
 Locales\Locale-zhTW.lua
 
 # Core Routes files
-Routes.lua
-Routes.xml
+RoutesClassic.lua
+RoutesClassic.xml
 TSP.lua
 
 # Routes Module files

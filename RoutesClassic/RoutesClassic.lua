@@ -1,12 +1,12 @@
 ﻿--[[
 ********************************************************************************
-Routes
+RoutesClassic
 @project-version@
-16 October 2014
+6 October 2022
 (Originally written for Live Servers v4.3.0.15050)
 (Hotfixed for v6.0.2.19034)
 
-Author: Xaroz @ EU Emerald Dream Alliance & Xinhuan @ US Blackrock Alliance
+Author: Xaroz @ EU Emerald Dream Alliance & Xinhuan @ US Blackrock Alliance & sbd74 (updated for wotlk classic)
 ********************************************************************************
 
 Description:
