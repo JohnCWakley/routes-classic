@@ -4,7 +4,7 @@
 
 --  Translation courtesy of Stan (Arcádia - EU Zirkel des Cenarius)
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
-local L = AceLocale:NewLocale("Routes", "deDE")
+local L = AceLocale:NewLocale("RoutesClassic", "deDE")
 if not L then return end
 
 --@localization(locale="deDE", format="lua_additive_table", table-name="L", handle-unlocalized="ignore")@

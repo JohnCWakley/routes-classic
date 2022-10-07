@@ -60,9 +60,9 @@ Contact:
 	       Paypal donations are welcome ;)
 ]]
 
-Routes = LibStub("AceAddon-3.0"):NewAddon("Routes", "AceConsole-3.0", "AceEvent-3.0", "AceHook-3.0")
+Routes = LibStub("AceAddon-3.0"):NewAddon("RoutesClassic", "AceConsole-3.0", "AceEvent-3.0", "AceHook-3.0")
 local Routes = Routes
-local L   = LibStub("AceLocale-3.0"):GetLocale("Routes", false)
+local L   = LibStub("AceLocale-3.0"):GetLocale("RoutesClassic", false)
 local G = {} -- was Graph-1.0, but we removed the dependency
 Routes.G = G
 Routes.Dragons = LibStub("HereBeDragons-2.0")
@@ -907,8 +907,8 @@ function Routes:OnInitialize()
 	self.options = options
 
 	-- Initialize the ace options table
-	LibStub("AceConfigRegistry-3.0"):RegisterOptionsTable("Routes", options)
-	local f = function() LibStub("AceConfigDialog-3.0"):Open("Routes") end
+	LibStub("AceConfigRegistry-3.0"):RegisterOptionsTable("RoutesClassic", options)
+	local f = function() LibStub("AceConfigDialog-3.0"):Open("RoutesClassic") end
 	self:RegisterChatCommand(L["routes"], f)
 	if L["routes"] ~= "routes" then
 		self:RegisterChatCommand("routes", f)
@@ -1232,7 +1232,7 @@ do
 			end
 		else
 			local oldAction = GetBindingAction(key)
-			local frame = LibStub("AceConfigDialog-3.0").OpenFrames["Routes"]
+			local frame = LibStub("AceConfigDialog-3.0").OpenFrames["RoutesClassic"]
 			if frame then
 				if ( oldAction ~= "" and oldAction ~= info.arg ) then
 					frame:SetStatusText(KEY_UNBOUND_ERROR:format(GetBindingText(oldAction, "BINDING_NAME_")))
@@ -1249,7 +1249,7 @@ end
 
 options = {
 	type = "group",
-	name = L["Routes"],
+	name = L["RoutesClassic"],
 	get = function(k) return db.defaults[k.arg] end,
 	set = function(k, v) db.defaults[k.arg] = v; Routes:DrawWorldmapLines(); Routes:DrawMinimapLines(true); end,
 	args = {
@@ -1929,7 +1929,7 @@ function ConfigHandler:DoBackground(info)
 		Routes:Print(L["Now running TSP in the background..."])
 		local dispLength;
 		Routes.TSP:SetStatusFunction(function(pass, progress, length)
-			local frame = LibStub("AceConfigDialog-3.0").OpenFrames["Routes"]
+			local frame = LibStub("AceConfigDialog-3.0").OpenFrames["RoutesClassic"]
 			if frame then
 				if length then
 					dispLength = length
@@ -1947,7 +1947,7 @@ function ConfigHandler:DoBackground(info)
 			t.metadata = meta
 			local msg = L["Path with %d nodes found with length %.2f yards after %d iterations in %.2f seconds."]:format(#output, length, iter, timetaken)
 			Routes:Print(msg)
-			local frame = LibStub("AceConfigDialog-3.0").OpenFrames["Routes"]
+			local frame = LibStub("AceConfigDialog-3.0").OpenFrames["RoutesClassic"]
 			if frame then
 				frame:SetStatusText(msg)
 			end

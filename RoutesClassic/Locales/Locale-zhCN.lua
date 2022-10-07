@@ -4,7 +4,7 @@
 
 -- zhCN Localization file,by Onlyfly
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
-local L = AceLocale:NewLocale("Routes", "zhCN")
+local L = AceLocale:NewLocale("RoutesClassic", "zhCN")
 if not L then return end
 
 --@localization(locale="zhCN", format="lua_additive_table", table-name="L", handle-unlocalized="ignore")@

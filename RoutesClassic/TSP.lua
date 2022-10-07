@@ -85,7 +85,7 @@ local inf = math.huge
 
 local pathR = {}
 local lastpath
-local Routes = LibStub("AceAddon-3.0"):GetAddon("Routes")
+local Routes = LibStub("AceAddon-3.0"):GetAddon("RoutesClassic")
 local TSP = {}
 Routes.TSP = TSP
 

@@ -1,8 +1,8 @@
-local Routes = LibStub("AceAddon-3.0"):GetAddon("Routes", 1)
+local Routes = LibStub("AceAddon-3.0"):GetAddon("RoutesClassic", 1)
 if not Routes then return end
 
 local SourceName = "Gatherer"
-local L = LibStub("AceLocale-3.0"):GetLocale("Routes")
+local L = LibStub("AceLocale-3.0"):GetLocale("RoutesClassic")
 
 ------------------------------------------
 -- setup

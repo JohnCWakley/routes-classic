@@ -1,6 +1,6 @@
-﻿local Routes = LibStub("AceAddon-3.0"):GetAddon("Routes")
+﻿local Routes = LibStub("AceAddon-3.0"):GetAddon("RoutesClassic")
 local AutoShow = Routes:NewModule("AutoShow", "AceEvent-3.0")
-local L = LibStub("AceLocale-3.0"):GetLocale("Routes")
+local L = LibStub("AceLocale-3.0"):GetLocale("RoutesClassic")
 
 -- Aceopt table, defined later
 local options

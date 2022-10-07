@@ -1,10 +1,10 @@
 ﻿-- Routes
 -- enUS and enGB Localization file
 
-local L = LibStub("AceLocale-3.0"):NewLocale("Routes", "enUS", true)
+local L = LibStub("AceLocale-3.0"):NewLocale("RoutesClassic", "enUS", true)
 
 
-L["Routes"] = true
+L["RoutesClassic"] = true
 L["routes"] = true -- slash command
 
 -- Options Config
@@ -123,7 +123,8 @@ L["Archaeology"] = true
 L["Note"] = true
 L["Logging"] = true
 
--- Route Config
+-- Routes Config
+L["Routes"] = true
 L["When the following data sources add or delete node data, update my routes automatically by inserting or removing the same node in the relevant routes."] = true
 L[" Gatherer/HandyNotes currently does not support callbacks, so this is impossible for Gatherer/HandyNotes."] = true
 L["You have |cffffd200%d|r route(s) in |cffffd200%s|r."] = true

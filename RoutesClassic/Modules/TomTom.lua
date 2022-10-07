@@ -1,6 +1,6 @@
-﻿local Routes = LibStub("AceAddon-3.0"):GetAddon("Routes")
+﻿local Routes = LibStub("AceAddon-3.0"):GetAddon("RoutesClassic")
 local TT = Routes:NewModule("TomTom", "AceEvent-3.0")
-local L = LibStub("AceLocale-3.0"):GetLocale("Routes")
+local L = LibStub("AceLocale-3.0"):GetLocale("RoutesClassic")
 
 -- Aceopt table, defined later
 local options
@@ -274,7 +274,7 @@ options = {
 
 
 -- Setup keybinds in keybinding menu
-BINDING_HEADER_Routes = L["Routes"]
+BINDING_HEADER_Routes = L["RoutesClassic"]
 BINDING_NAME_ROUTESTTSTART = L["Start using Waypoints (TomTom)"]
 BINDING_NAME_ROUTESTTSTOP = L["Stop using Waypoints (TomTom)"]
 BINDING_NAME_ROUTESTTCHANGEDIR = L["Change direction (TomTom)"]
