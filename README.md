@@ -10,7 +10,7 @@ Original Routes addon, updated to work with WotLK Classic
   * Download:
     * [Releases](https://github.com/JohnCWakley/routes-classic/releases)
     * [CurseForge](https://www.curseforge.com/wow/addons/routesclassic)
-    * [WoW Interface](https://www.wowinterface.com/downloads/info26098-FaceMelterClassic.html)
+    * [WoW Interface](https://www.wowinterface.com/downloads/info26422-RoutesClassic.html)
   * Installation:
     * Unzip archive.
     * Copy/move the `RoutesClassic` folder into your `World of Warcraft\_classic_\Interface\AddOns` folder.
